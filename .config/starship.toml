@@ -1,0 +1,61 @@
+add_newline = false
+
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = 'on [$hostname](purple bold) '
+trim_at = "."
+disabled = false
+
+[aws]
+symbol = "  "
+
+[bun]
+symbol = "bun "
+
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[lua]
+symbol = "󰢱 "
+style = "purple bold"
+
+[memory_usage]
+symbol = " "
+
+[nodejs]
+symbol = "󰎙 "
+detect_files = ['package-lock.json', 'pnpm-lock.yaml']
+detect_folders = []
+detect_extensions = []
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+style = "green bold"
+
+[rust]
+symbol = " "
+
+[php]
+symbol = " "
