@@ -3,11 +3,11 @@ dynamic_padding = true
 opacity = 0.98
 
 [window.padding]
-x = 8 
+x = 8
 y = 8 
 
 [font]
-size = 11
+size = 10
 
 [font.bold]
 family = 'Caskaydia Cove Nerd Font'
@@ -17,8 +17,12 @@ style = 'Bold'
 family = 'Caskaydia Cove Nerd Font'
 style = 'Regular'
 
+[font.italic]
+family = 'Caskaydia Cove Nerd Font'
+style = 'Italic'
+
 [colors.primary]
-background = '#181616'
+background = '#161818'
 foreground = '#c5c9c5'
 
 [colors.normal]
@@ -31,6 +35,9 @@ magenta = '#a292a3'
 cyan = '#8ea4a2'
 white = '#C8C093'
 
+[colors]
+draw_bold_text_with_bright_colors = true
+
 [colors.bright]
 black = '#a6a69c'
 red = '#E46876'
@@ -40,3 +47,8 @@ blue = '#7FB4CA'
 magenta = '#938AA9'
 cyan = '#7AA89F'
 white = '#c5c9c5'
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Enter"
+mods = "Alt"
