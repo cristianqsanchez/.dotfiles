@@ -1,26 +1,10 @@
 add_newline = false
 
-[username]
-style_user = "green bold"
-style_root = "red bold"
-format = "[$user]($style) "
-disabled = false
-show_always = true
-
-[hostname]
-ssh_only = false
-format = 'on [$hostname](purple bold) '
-trim_at = "."
-disabled = false
-
-[aws]
-symbol = "  "
-
 [bun]
 symbol = "bun "
 
 [directory]
-read_only = " "
+truncate_to_repo = false
 
 [docker_context]
 symbol = " "
@@ -47,15 +31,9 @@ detect_files = ['package-lock.json', 'pnpm-lock.yaml']
 detect_folders = []
 detect_extensions = []
 
-[package]
-symbol = " "
-
-[python]
-symbol = " "
-style = "green bold"
-
 [rust]
 symbol = " "
 
-[php]
-symbol = " "
+[golang]
+symbol = " "
+format = "via [$symbol$version](bold blue) "
