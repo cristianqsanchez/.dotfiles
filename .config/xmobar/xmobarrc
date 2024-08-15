@@ -1,11 +1,12 @@
   Config {
     font = "CaskaydiaCove Nerd Font bold 9",
     additionalFonts = [
+    "CaskaydiaCove Nerd Font bold 9",
     "Font Awesome 6 Free Solid 12",
     "Font Awesome 6 Brands 12"
     ],
 		border = NoBorder
-		position = TopSize C 100 20
+		position = TopSize C 100 22
     bgColor = "#181616",
     fgColor = "#8ba4b0",
     lowerOnStart = True,
@@ -13,20 +14,28 @@
     hideOnStart = False,
     allDesktops = True,
     commands = [
-      Run Network "wlp1s0" ["-t", "<fn=1>\xf35b</fn> <rx>kb  <fn=1>\xf358</fn> <tx>kb"] 10,
+      Run Network "wlp1s0" ["-t", "<fn=1>\xf0ab</fn> <rx>kb  <fn=1>\xf0aa</fn> <tx>kb"] 10,
       Run Cpu ["-t","<fn=1>\xf2db</fn> cpu: <total>%"] 10,
       Run Memory ["-t","<fn=1>\xf538</fn> Mem: <usedratio>%"] 10,
+      Run Com "echo" ["<fn=1>\xf303</fn> Updates:"] "bell" 3600,
+      Run Com ".local/bin/pacman-updates.sh" [] "pacupdate" 36000,
       Run Com "uname" ["-s","-r"] "" 36000,
       Run BatteryP ["BAT1"] ["-t", "<fn=1>\xf240</fn> <left>%"] 360,
-      Run Date "<fn=1>\xf133</fn> %d %b %H:%M" "date" 600,
+      Run Date "<fn=1>\xef37</fn> %d %b %H:%M" "date" 600,
       Run UnsafeStdinReader
     ],
     sepChar = "%",
     alignSep = "}{",
     template = " %UnsafeStdinReader% }{ \
+      \<box type=Bottom width=2 mb=2 color=#8ea4a2><fc=#8ea4a2> %bell% %pacupdate% </fc></box> \
+      \ \
       \<box type=Bottom width=2 mb=2 color=#c4746e><fc=#c4746e> %cpu% </fc></box> \
+      \ \
       \<box type=Bottom width=2 mb=2 color=#8ea4a2><fc=#8ea4a2> %memory% </fc></box> \
+      \ \
       \<box type=Bottom width=2 mb=2 color=#a292a3><fc=#a292a3> %wlp1s0% </fc></box> \
+      \ \
       \<box type=Bottom width=2 mb=2 color=#c4b28a><fc=#c4b28a> %battery% </fc></box> \
+      \ \
       \<box type=Bottom width=2 mb=2 color=#8ba4b0><fc=#8ba4b0> %date% </fc></box> "
   }
