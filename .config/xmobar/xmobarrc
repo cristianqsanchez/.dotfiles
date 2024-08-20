@@ -27,13 +27,13 @@
     sepChar = "%",
     alignSep = "}{",
     template = " %UnsafeStdinReader% }{ \
-      \<box type=Bottom width=2 mb=2 color=#8ea4a2><fc=#8ea4a2> %bell% %pacupdate% </fc></box> \
+      \<box type=Bottom width=2 mb=2 color=#7FB4CA><fc=#7FB4CA> %bell% %pacupdate% </fc></box> \
       \ \
       \<box type=Bottom width=2 mb=2 color=#c4746e><fc=#c4746e> %cpu% </fc></box> \
       \ \
       \<box type=Bottom width=2 mb=2 color=#8ea4a2><fc=#8ea4a2> %memory% </fc></box> \
       \ \
-      \<box type=Bottom width=2 mb=2 color=#a292a3><fc=#a292a3> %wlp1s0% </fc></box> \
+      \<box type=Bottom width=2 mb=2 color=#938AA9><fc=#938AA9> %wlp1s0% </fc></box> \
       \ \
       \<box type=Bottom width=2 mb=2 color=#c4b28a><fc=#c4b28a> %battery% </fc></box> \
       \ \
