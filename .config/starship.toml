@@ -40,3 +40,6 @@ symbol = " "
 [golang]
 symbol = " "
 format = "via [$symbol$version](bold blue) "
+
+[php]
+symbol = " "
